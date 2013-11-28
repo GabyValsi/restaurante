@@ -1,3 +1,37 @@
-28 Nov 2013 02:15:15,702 INFO  ~ Starting /home/action/play-1.2.4/restaurante
-28 Nov 2013 02:15:16,414 WARN  ~ You're running Play! in DEV mode
-28 Nov 2013 02:15:16,499 ERROR ~ Could not bind on port 9000
+28 Nov 2013 21:22:53,060 INFO  ~ Starting /home/action/play-1.2.4/restaurante
+28 Nov 2013 21:22:54,338 WARN  ~ You're running Play! in DEV mode
+28 Nov 2013 21:22:54,484 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+28 Nov 2013 21:23:00,990 ERROR ~ Unable to set localhost. This prevents creation of a GUID. Cause was: apprails-24835: apprails-24835: Name or service not known
+java.net.UnknownHostException: apprails-24835: apprails-24835: Name or service not known
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1473)
+	at net.sf.ehcache.Cache.<clinit>(Cache.java:155)
+	at net.sf.ehcache.config.ConfigurationHelper.createCache(ConfigurationHelper.java:298)
+	at net.sf.ehcache.config.ConfigurationHelper.createDefaultCache(ConfigurationHelper.java:214)
+	at net.sf.ehcache.CacheManager.configure(CacheManager.java:552)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:323)
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:279)
+	at net.sf.ehcache.CacheManager.create(CacheManager.java:641)
+	at play.cache.EhCacheImpl.<init>(EhCacheImpl.java:31)
+	at play.cache.EhCacheImpl.newInstance(EhCacheImpl.java:41)
+	at play.cache.Cache.init(Cache.java:241)
+	at play.Play.start(Play.java:511)
+	at play.Play.detectChanges(Play.java:629)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at play.server.PlayHandler$NettyInvocation.init(PlayHandler.java:195)
+	at play.Invoker$Invocation.run(Invoker.java:276)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:235)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.net.UnknownHostException: apprails-24835: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1293)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1469)
+	... 23 more
+28 Nov 2013 21:23:01,717 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+28 Nov 2013 21:23:02,831 INFO  ~ Application 'restaurante' is now started !
