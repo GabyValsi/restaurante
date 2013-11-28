@@ -3,7 +3,15 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
+GET        /                                    Application.index
+
+GET        /comidas                             Comidas.comidas
+
+
+POST        /comidas                             Comidas.saveComida
+#GET        /comida                              Comidas.comidas
+#PUT        /comidas/{id}                        Comidas.updateComidas
+#DELETE     /comidas/{id}                        Comidas.deleteComida
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

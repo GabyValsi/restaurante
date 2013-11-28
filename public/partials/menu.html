@@ -6,15 +6,62 @@
             <hr>
             <h2 class="intro-text text-center"> Menú</h2>
             <hr>
-             <div ng-repeat="plato in platillos">
+            
+             <div>
+               
+               
+               
+               <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr>                                
+                                <td>
+                                  <h2> Costillitas </h2>
+                                  <!-- //---------------------- -->                                 
+                                                <input ng-model="newComida.platillo" type="hidden" value="Costilitas">
+                                                <input ng-model="newComida.precio" type="hidden" value="100">                                                
+                                                <input ng-model="newComida.cantidad" type="hidden" value="1">                                                
+                                                <input ng-model="newComida.selected" type="hidden" value=false>
+                                                
+                                  <!-- //---------------------- -->
+                                  
+                                  <br>
+                                   <a href="">
+                                    <img src="http://otrostyloparacocinar.files.wordpress.com/2012/10/costillitas-agri-31.jpg" alt="Smiley face" height="100" width="100"
+                                         ng-click='agregar()'
+                                    >        
+                                   </a> 
+                                  <br>
+                                  <h3>$ 100 </h3>
+                                </td>                                
+                            </tr>                                
+                            <tr>
+                                <td>&nbsp;</td>                                
+                            </tr>		  
+                        </tbody>
+                    </table>
+
+               
+               
               <table>
                 <tr>                
                 <td>Platillo</td>
                 <td>Costo</td>
                 </tr>
-                <tr>
-                  <td>{{plato.nombre}}</td>
-                  <td>{{plato.costo}}</td>
+                <tr ng-repeat="plato in misComidas">
+                  
+                  
+                                <td>{{plato.platillo}}</td>
+                                <td>{{plato.cantidad}}</td>
+                                <td>$ {{plato.precio}}</td> <!--Importe-->
+                                <td>$ {{plato.importe}}</td>
                 </tr>
               </table>
                
@@ -22,7 +69,7 @@
           </div>
           
           <div class="col-md-6">
-            <img class="img-responsive img-border-left" src="img/food.jpg">
+            <!-- <img class="img-responsive img-border-left" src="img/food.jpg"> -->
             
           </div>
           <div class="col-md-6">
@@ -37,7 +84,8 @@
         <div class="box">
           <div class="col-lg-12">
             <hr>
-            <h2 class="intro-text text-center">Our <strong>Team</strong></h2>
+            <h2 class="intro-text text-center">Our <stro
+                                                         >Team</strong></h2>
             <hr>
           </div>
           <div class="col-sm-4 text-center">
