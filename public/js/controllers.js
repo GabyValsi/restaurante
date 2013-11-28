@@ -49,7 +49,7 @@ var homeCtrl = function ($scope, $resource /*, testService, mySharedService*/)
                          $scope.newComida.$save(function(data)
                                               {
                                                 $scope.misComidas.push($scope.newComida);
-                                                $scope.newComida = Comida();
+                                                $scope.newComida = new Comida();
                                                  $scope.totalizar();
                                               }); 
                       
@@ -69,7 +69,8 @@ var homeCtrl = function ($scope, $resource /*, testService, mySharedService*/)
                      $scope.totalizar();
                   }
   
-  $scope.borrar = function(c,i)
+  $scope.delete = function(c,i)
+ // console.log(c);
                   {
                     c.$delete(function()
                               {
