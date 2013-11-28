@@ -62,7 +62,7 @@
 
                             <tr ng-repeat="miComida in misComidas">
                                 <td class="">
-                                    <button class="btn btn-danger" ng-click="borrar(miComida, $index)">Eliminar</button>
+                                    <button class="btn btn-danger" ng-click="delete(miComida, $index)">Eliminar</button>
                                 </td>
                                 <td>
                                     <button class="btn btn-warning" ng-click="update(miComida)">Actualizar</button>
@@ -118,12 +118,12 @@
 
 
                                                <td>
-                                                SubTotal: ${{total + envioprod}} <br>
+                                                SubTotal: ${{total}} <br>
 
                                                 IVA: ${{total * 0.16}} <br>
 
                                                 
-                                                Total: $ {{grantotal}} <br>
+                                                Total: $ {{total * 1.16}} <br>
 
                                                 
                                                </td></h3>

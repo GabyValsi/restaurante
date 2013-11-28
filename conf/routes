@@ -6,12 +6,12 @@
 GET        /                                    Application.index
 
 GET        /comidas                             Comidas.comidas
-
-
+DELETE     /comidas/{id}                        Comidas.deleteComidas
+PUT        /comidas/{id}                        Comidas.updateComidas
 POST        /comidas                             Comidas.saveComida
-#GET        /comida                              Comidas.comidas
-#PUT        /comidas/{id}                        Comidas.updateComidas
-#DELETE     /comidas/{id}                        Comidas.deleteComida
+GET        /comida                              Comidas.comidas
+PUT        /comidas/{id}                        Comidas.updateComidas
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
