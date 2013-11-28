@@ -12,12 +12,7 @@
                
                
                <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                
-                            </tr>
-                        </thead>
+                      
                  
                         <tbody>
 
@@ -39,9 +34,10 @@
                                   <!-- //---------------------- -->
                                   
                                   <br>
-                                   <a href="">
-                                    <img src="http://otrostyloparacocinar.files.wordpress.com/2012/10/costillitas-agri-31.jpg" alt="Smiley face" height="100" width="100"
-                                         ng-click='agregar()'
+                                   <a href="./#/servicio">
+                                    <img src="http://otrostyloparacocinar.files.wordpress.com/2012/10/costillitas-agri-31.jpg"
+                                         alt="Smiley face" height="100" width="100"
+                                         ng-click='agregarcart()'
                                     >        
                                    </a> 
                                   <br>
@@ -135,7 +131,7 @@
                                 <th>
                                   <h3> Mole </h3>
                                   <!-- //---------------------- -->                                 
-                                                <input ng-model="newComida.platillo" type="hidden" value="Costilitas">
+                                                <input ng-model="newComida.platillo" type="hidden" value="Mole">
                                                 <input ng-model="newComida.precio" type="hidden" value="40">                                                
                                                 <input ng-model="newComida.cantidad" type="hidden" value="1">                                                
                                                 <input ng-model="newComida.selected" type="hidden" value=false>
@@ -145,7 +141,7 @@
                                   <br>
                                    <a href="">
                                     <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcSX0NurfOE2ja6FCSVD1Sa_0B02_A1-aDcqbivPQ9tHk9Fsk5TOhw" alt="Smiley face" height="100" width="100"
-                                         ng-click='agregar(newComida)'
+                                         ng-click='agregar()'
                                     >        
                                    </a> 
                                   <br>
@@ -159,25 +155,39 @@
                    
                
                
-              <table>
-                <tr>                
-                <td>Platillo</td>
-                <td>Costo</td>
-                </tr>
-                <tr ng-repeat="platillo in misComidas">
-                  
-                  
-                                <td>{{platillo.platillo}}</td>
-                                <td>{{platillo.cantidad}}</td>
-                                <td>{{platillo.precio}}</td> <!--Importe-->
-                                <td>{{platillo.importe}}</td>
-                </tr>
-              </table>
-               <button type="button" class="btn btn-warning disabled" >Nuevo platillo</button>
+              <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                              <th>Agregar</th>
+                                <th>Platillo</th>                                
+                            
+                                <th>Precio Unitario</th>
+                                                      </tr>
+                        </thead>
+                        <tbody>
 
-<<<<<<< HEAD
-      
-=======
+
+                            <tr ng-repeat="miComida in misComidas">
+                              
+                              <td><button class="btn btn-warning" ng-click="agregarcart()">Agregar</button></td>
+                               
+                                <td>{{miComida.platillo}}</td>
+                            
+                                <td>$ {{miComida.precio}}</td> <!--Importe-->
+                            </tr>                                
+                            <tr>
+                               
+                               <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                  
+                               
+                                
+
+                            </tr>		  
+                        </tbody>
+                    </table>
+                          <button type="button" class="btn btn-warning"> <a href="./#/contacto"> Nuevo platillo</a> </button> 
+
   <!--   <div class="row">
         <div class="box">
           <div class="col-lg-12">

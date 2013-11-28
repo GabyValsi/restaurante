@@ -54,6 +54,23 @@ var homeCtrl = function ($scope, $resource /*, testService, mySharedService*/)
                                               }); 
                       
                    }
+  $scope.agregarcart = function()
+                   {
+                     $scope.new1Comida.id 
+                       ?
+                       $scope.new1Comida.$update(function(){
+                         $scope.new1Comida = Comida(); 
+                          $scope.totalizar();
+                       })
+                       :                     
+                         $scope.new1Comida.$save(function(data)
+                                              {
+                                                $scope.misComidas1.push($scope.new1Comida);
+                                                $scope.new1Comida = new Comida();
+                                                 $scope.totalizar();
+                                              }); 
+                      
+                   }
   
   Comida.query(function(data)
                   {

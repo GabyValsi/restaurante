@@ -1,7 +1,7 @@
-28 Nov 2013 21:22:53,060 INFO  ~ Starting /home/action/play-1.2.4/restaurante
-28 Nov 2013 21:22:54,338 WARN  ~ You're running Play! in DEV mode
-28 Nov 2013 21:22:54,484 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-28 Nov 2013 21:23:00,990 ERROR ~ Unable to set localhost. This prevents creation of a GUID. Cause was: apprails-24835: apprails-24835: Name or service not known
+28 Nov 2013 21:48:04,872 INFO  ~ Starting /home/action/play-1.2.4/restaurante
+28 Nov 2013 21:48:06,264 WARN  ~ You're running Play! in DEV mode
+28 Nov 2013 21:48:06,444 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+28 Nov 2013 21:48:12,413 ERROR ~ Unable to set localhost. This prevents creation of a GUID. Cause was: apprails-24835: apprails-24835: Name or service not known
 java.net.UnknownHostException: apprails-24835: apprails-24835: Name or service not known
 	at java.net.InetAddress.getLocalHost(InetAddress.java:1473)
 	at net.sf.ehcache.Cache.<clinit>(Cache.java:155)
@@ -33,5 +33,75 @@ Caused by: java.net.UnknownHostException: apprails-24835: Name or service not kn
 	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1293)
 	at java.net.InetAddress.getLocalHost(InetAddress.java:1469)
 	... 23 more
-28 Nov 2013 21:23:01,717 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-28 Nov 2013 21:23:02,831 INFO  ~ Application 'restaurante' is now started !
+28 Nov 2013 21:48:13,080 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+28 Nov 2013 21:48:14,717 INFO  ~ Application 'restaurante' is now started !
+28 Nov 2013 21:57:47,696 ERROR ~ 
+
+@6gdfmj68h
+Comidas.updateComidas action not found
+
+Action not found
+Action Comidas.updateComidas could not be found. Error raised is No method public static void updateComidas() was found in class controllers.Comidas
+
+play.exceptions.ActionNotFoundException: Action Comidas.updateComidas not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:601)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void updateComidas() was found in class controllers.Comidas
+	... 3 more
+28 Nov 2013 21:59:01,452 ERROR ~ 
+
+@6gdfmj68i
+Comidas.updateComidas action not found
+
+Action not found
+Action Comidas.updateComidas could not be found. Error raised is No method public static void updateComidas() was found in class controllers.Comidas
+
+play.exceptions.ActionNotFoundException: Action Comidas.updateComidas not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:601)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void updateComidas() was found in class controllers.Comidas
+	... 3 more
+28 Nov 2013 22:00:19,644 ERROR ~ 
+
+@6gdfmj68j
+Comidas.updateComidas action not found
+
+Action not found
+Action Comidas.updateComidas could not be found. Error raised is No method public static void updateComidas() was found in class controllers.Comidas
+
+play.exceptions.ActionNotFoundException: Action Comidas.updateComidas not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:601)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void updateComidas() was found in class controllers.Comidas
+	... 3 more
+28 Nov 2013 22:00:46,401 ERROR ~ 
+
+@6gdfmj68k
+Comidas.updateComidas action not found
+
+Action not found
+Action Comidas.updateComidas could not be found. Error raised is No method public static void updateComidas() was found in class controllers.Comidas
+
+play.exceptions.ActionNotFoundException: Action Comidas.updateComidas not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:601)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void updateComidas() was found in class controllers.Comidas
+	... 3 more
+28 Nov 2013 22:00:47,408 ERROR ~ 
+
+@6gdfmj68l
+Comidas.updateComidas action not found
+
+Action not found
+Action Comidas.updateComidas could not be found. Error raised is No method public static void updateComidas() was found in class controllers.Comidas
+
+play.exceptions.ActionNotFoundException: Action Comidas.updateComidas not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:601)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void updateComidas() was found in class controllers.Comidas
+	... 3 more
